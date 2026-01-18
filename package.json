@@ -1,7 +1,7 @@
 {
   "name": "@hytaleone/votifier",
   "version": "1.0.0",
-  "description": "Send votes to Hytale and Minecraft servers using Votifier V1 and V2 (NuVotifier) protocols",
+  "description": "TypeScript/JavaScript client for Votifier V1 and V2 (NuVotifier) protocols. Send votes from server list websites to Hytale and Minecraft game servers.",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -34,10 +34,17 @@
     "votifier",
     "nuvotifier",
     "vote",
+    "voting",
     "server-list",
     "bukkit",
     "spigot",
-    "paper"
+    "paper",
+    "minecraft-server",
+    "hytale-server",
+    "game-server",
+    "server-voting",
+    "rsa",
+    "hmac"
   ],
   "author": "HytaleOne",
   "license": "MIT",

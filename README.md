@@ -1,8 +1,20 @@
 # @hytaleone/votifier
 
+[![npm version](https://img.shields.io/npm/v/@hytaleone/votifier.svg)](https://www.npmjs.com/package/@hytaleone/votifier)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 TypeScript client for sending votes to Hytale and Minecraft servers using Votifier V1 and V2 (NuVotifier) protocols.
 
 Used by server list websites to notify game servers when players vote. Compatible with Hytale, Minecraft servers running Votifier or NuVotifier plugins.
+
+## Features
+
+- **Votifier V1** - RSA encrypted votes (legacy servers)
+- **Votifier V2 / NuVotifier** - HMAC-SHA256 signed votes with challenge-response
+- **Zero dependencies** - Uses only Node.js built-in modules
+- **TypeScript** - Full type definitions included
+- **Retry-safe error handling** - Know when it's safe to retry failed votes
+- **Dual format** - Works with both ESM and CommonJS
 
 ## Installation
 
@@ -165,6 +177,15 @@ try {
 }
 ```
 
+## Compatible Plugins
+
+This library works with servers running:
+
+- [NuVotifier](https://github.com/NuVotifier/NuVotifier) (Bukkit/Spigot/Paper) - V1 & V2
+- [Votifier](https://dev.bukkit.org/projects/votifier) (Legacy Bukkit) - V1 only
+- [VotifierPlus](https://www.spigotmc.org/resources/votifierplus.74040/) - V1 & V2
+- Any Votifier-compatible plugin for Hytale servers
+
 ## Requirements
 
 - Node.js >= 18
@@ -172,6 +193,10 @@ try {
 ## License
 
 MIT
+
+## Related
+
+- [@hytaleone/query](https://www.npmjs.com/package/@hytaleone/query) - Query Hytale and Minecraft servers
 
 ---
 
